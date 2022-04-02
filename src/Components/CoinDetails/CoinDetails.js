@@ -15,15 +15,26 @@ const CoinDetails = () => {
             })
     }, [id])
     return (
-        <div>
+        <div className='flex w-3/4 justify-between p-10 text-white m-auto mt-20 bg-slate-700 rounded-lg items-center'>
             <div>
-                <h1>General Info</h1>
-                <p>Coin name: {coin.name}</p>
-                <p>Market cap rank: {coin.market_cap_rank}</p>
-                <p>Origin: </p>
-                <p>Contract address: {coin.contract_address}</p>
-                <p>Hashing Algorithm: {coin.hashing_algorithm}</p>
-                <p>Genesis Date: {coin.genesis_date}</p>
+                <div>
+                    <h1>General Info</h1>
+                    <p>Coin name: {coin.name}</p>
+                    <p>Market cap rank: {coin.market_cap_rank}</p>
+                    <p>Origin: </p>
+                    <p>Contract address: {coin.contract_address}</p>
+                    <p>Hashing Algorithm: {coin.hashing_algorithm}</p>
+                    <p>Genesis Date: {coin.genesis_date}</p>
+                </div>
+                <div>
+                    <h1>General Info</h1>
+                    <p>Coin name: {coin.name}</p>
+                    <p>Market cap rank: {coin.market_cap_rank}</p>
+                    <p>Origin: </p>
+                    <p>Contract address: {coin.contract_address}</p>
+                    <p>Hashing Algorithm: {coin.hashing_algorithm}</p>
+                    <p>Genesis Date: {coin.genesis_date}</p>
+                </div>
             </div>
             <div>
                 <img src={coin.image?.large} alt="" />
